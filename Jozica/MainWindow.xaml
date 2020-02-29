@@ -1,0 +1,18 @@
+﻿<Window x:Class="Jozica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jozica"
+        mc:Ignorable="d"
+        Title="CO-V-ID (COnnection eVent IDentifier" Height="600" Width="800">
+    <Grid Height="560">
+
+        <Button Content="Open File" HorizontalAlignment="Left" Height="26" Margin="34,31,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click"/>
+        <ListBox Name="listBox1" HorizontalAlignment="Left" Height="392" VerticalAlignment="Center" Width="732" SelectionChanged="ListBox_SelectionChanged" Grid.ColumnSpan="2" Margin="34,0,0,0"/>
+        <ProgressBar Name="progressBar1" HorizontalAlignment="Left" Height="25" Margin="34,502,0,0" VerticalAlignment="Top" Width="732" Grid.ColumnSpan="2"/>
+        <Label Name="path" Content="" Margin="141,29,151,491"/>
+        <Label Name="realPath" Content="" Margin="217,29,29,491" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
